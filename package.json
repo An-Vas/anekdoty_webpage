@@ -1,0 +1,30 @@
+{
+  "name": "anekdoty_webpage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.3",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.19.2",
+    "hbs": "^4.2.0",
+    "jsdom": "^24.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.5.2",
+    "sequelize": "^6.37.3",
+    "webpack": "^5.93.0"
+  },
+  "devDependencies": {
+    "json-loader": "^0.5.7",
+    "webpack-cli": "^5.1.4"
+  }
+}

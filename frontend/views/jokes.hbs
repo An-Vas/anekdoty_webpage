@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/jokes-style.css">
+    <script src="/scripts/check-auth.js"></script>
+    <script src="/scripts/jokes-edit.js"></script>
+    <script src="/scripts/jokes-load.js"></script>
+
+    <title>Анекдоты localhost :)</title>
+</head>
+<body>
+    {{>header}}
+    <main>
+        <a href="/home">К списку категорий</a>
+        <br>
+        <br>
+        <div id="jokes-blocks">
+            <div class="text-block" data-id="1">
+                <p class="text-block-body">Загрузка...</p>
+                <button class="text-block__edit-button"></button>
+                <div class="text-block__id">?</div>
+            </div>
+        </div>
+
+    </main>
+
+    </body>
+</html>

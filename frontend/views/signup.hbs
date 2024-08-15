@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/scripts/signup.js"></script>
+
+    <title>Анекдоты localhost :)</title>
+</head>
+<body>
+    {{>header}}
+    <main>
+
+        <form >
+            <label for="usernameInput">Придумайте username:</label>
+            <input type="text" id="usernameInput" required>
+            <br>
+            <label for="passwordInput">Придумайте пароль:</label>
+            <input type="password" id="passwordInput" required>
+            <br>
+            <label><input id="adminCheckbox" type="checkbox">  Я Админ</label>
+            <br>
+            <button type="submit" id="signupButton">Зарегистрироваться</button>
+        </form>
+
+    </main>
+
+</body>
+</html>
