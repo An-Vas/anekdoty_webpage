@@ -77,3 +77,11 @@ a:hover {
 }
 
 
+#for-not-authorized{
+    visibility: hidden;
+}
+
+
+#for-authorized{
+    visibility: hidden;
+}

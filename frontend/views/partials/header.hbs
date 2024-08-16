@@ -1,9 +1,14 @@
 <header>
     <div id="header-content">
         <h1>Анекдоты localhost :)</h1>
-        <div id="header-content"><a href="/signin" class="auth-button">Войти</a>
-            <a href="/signup" class="auth-button">Зарегистрироваться</a>
-            <a href="/signout" class="auth-button">Выйти</a>
+        <div id="header-content">
+            <div id="for-not-authorized" >
+                <a href="/signin" class="auth-button">Войти</a>
+                <a href="/signup" class="auth-button">Зарегистрироваться</a>
+            </div>
+            <div id="for-authorized">
+                <a href="/signout" class="auth-button">Выйти</a>
+            </div>
         </div>
     </div>
 </header>

@@ -28,6 +28,14 @@ function sendUser(){
                     password: password,
                 }),
             })
+                .then((res) => {
+                    if (res.status == 401){
+                        alert("Пользователя с таким username не существует")
+                    } else if (res.status == 400){
+                        alert("Пароль указан неправильно")
+                    }
+                    return res;
+                })
                 .then((resp) => resp.json())
                 .then(function(response) {
                 if (response.redirect_path) {

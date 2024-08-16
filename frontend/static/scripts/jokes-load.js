@@ -80,7 +80,7 @@ function displayJokes(jokes, isAdmin) {
 
 
     })
-    if (list.querySelectorAll('li').length < 1) {
+    if (jokes.length < 1) {
         let p = document.createElement('p');
         p.innerHTML = 'На сервере пока нет анекдотов из этой категории!';
         list.appendChild(p);

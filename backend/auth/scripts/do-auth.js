@@ -12,7 +12,7 @@ async function signup  (req, res, next)  {
     if (admin) { role = "Admin" }
 
     if (password.length < 4) {
-        return res.status(400).json({ message: "Password less than 4 characters" })
+        return res.status(411).json({ message: "Password less than 4 characters" })
     }
 
     bcrypt.hash(password, 10).then(async (hash) => {
@@ -41,7 +41,7 @@ async function signup  (req, res, next)  {
                 })
             })
             .catch((error) =>
-                res.status(400).json({
+                res.status(409).json({
                     message: "User not successful created",
                     error: error.message,
                     redirect_path: "/home",
